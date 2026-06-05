@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Citizen Welfare vs. National Power — AIC share of GDP</title>
+<script src="echarts.min.js"></script>
+<style>
+  :root {
+    --bg: #f7f6f3;
+    --panel: #ffffff;
+    --ink: #1f2328;
+    --muted: #6b7280;
+    --line: #e6e3dc;
+    --accent: #2E86AB;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 16px 22px 12px;
+    border-bottom: 1px solid var(--line);
+    background: var(--panel);
+  }
+  header h1 { margin: 0; font-size: 18px; font-weight: 650; letter-spacing: -0.01em; }
+  header p { margin: 4px 0 0; color: var(--muted); font-size: 12.5px; max-width: 980px; }
+  .layout { flex: 1; display: flex; min-height: 0; }
+  /* ---- sidebar ---- */
+  aside {
+    width: 290px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--line);
+    background: var(--panel);
+    overflow-y: auto;
+    padding: 16px 16px 28px;
+  }
+  .group { margin-bottom: 22px; }
+  .group > .label {
+    font-size: 11px; font-weight: 650; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--muted); margin-bottom: 9px;
+  }
+  /* segmented toggle */
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .seg button {
+    border: 0; background: var(--panel); color: var(--ink);
+    padding: 6px 13px; font-size: 13px; cursor: pointer; font: inherit;
+  }
+  .seg button + button { border-left: 1px solid var(--line); }
+  .seg button.active { background: var(--accent); color: #fff; }
+  .row { display: flex; gap: 8px; align-items: center; margin-top: 8px; flex-wrap: wrap; }
+  .row label.fld { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 5px; }
+  .row input[type="number"] {
+    width: 84px; padding: 5px 7px; border: 1px solid var(--line); border-radius: 6px; font: inherit;
+  }
+  .check { display: flex; align-items: center; gap: 8px; margin-top: 7px; font-size: 13px; cursor: pointer; }
+  .check input { accent-color: var(--accent); }
+  /* region legend */
+  .region { display: flex; align-items: center; gap: 8px; padding: 5px 6px; border-radius: 6px; cursor: pointer; user-select: none; }
+  .region:hover { background: #f3f1ec; }
+  .region .swatch { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+  .region.off { opacity: 0.4; }
+  .region .count { margin-left: auto; color: var(--muted); font-size: 11.5px; }
+  /* country list */
+  .search { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 7px; font: inherit; }
+  .mini { display: flex; gap: 10px; margin: 8px 0 4px; }
+  .mini button {
+    background: none; border: 0; color: var(--accent); cursor: pointer; font: inherit; font-size: 12px; padding: 0;
+  }
+  .countries { max-height: 280px; overflow-y: auto; border: 1px solid var(--line); border-radius: 8px; padding: 4px 6px; }
+  .citem { display: flex; align-items: center; gap: 7px; padding: 3px 4px; font-size: 12.5px; border-radius: 5px; }
+  .citem:hover { background: #f3f1ec; }
+  .citem input { accent-color: var(--accent); }
+  .citem .dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+  .citem .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* chart */
+  main { flex: 1; min-width: 0; position: relative; }
+  #chart { position: absolute; inset: 0; }
+  footer { padding: 7px 22px; font-size: 11px; color: var(--muted); border-top: 1px solid var(--line); background: var(--panel); }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>How nations split their economy: citizen welfare vs. everything else</h1>
+  <p>Each bubble is an economy. <b>y</b> = Actual Individual Consumption (AIC) as % of GDP; <b>x</b> = GDP per capita (PPP);
+     <b>bubble area</b> ∝ total GDP (PPP); <b>color</b> = region.</p>
+</header>
+
+<div class="layout">
+  <aside>
+    <div class="group">
+      <div class="label">X-axis scale</div>
+      <div class="seg" id="scaleSeg">
+        <button data-v="log" class="active">Log</button>
+        <button data-v="linear">Linear</button>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="label">X-axis range (GDP / capita)</div>
+      <div class="seg" id="rangeSeg">
+        <button data-min="0" class="active">All</button>
+        <button data-min="5000">&gt; $5k</button>
+        <button data-min="10000">&gt; $10k</button>
+      </div>
+      <div class="row">
+        <label class="fld">min $<input type="number" id="minIn" step="1000" min="0"></label>
+        <label class="fld">max $<input type="number" id="maxIn" step="1000" min="0"></label>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="label">Reference lines</div>
+      <label class="check"><input type="checkbox" id="lineWorld" checked> World average (<span id="wsTxt"></span>%)</label>
+      <label class="check"><input type="checkbox" id="line100" checked> AIC = GDP (100%)</label>
+    </div>
+
+    <div class="group">
+      <div class="label">Regions</div>
+      <div id="regionList"></div>
+    </div>
+
+    <div class="group">
+      <div class="label">Countries</div>
+      <input class="search" id="search" placeholder="Search to filter or find…" autocomplete="off">
+      <div class="mini">
+        <button id="selAll">Select all</button>
+        <button id="selNone">Clear</button>
+        <span id="visCount" style="margin-left:auto;color:var(--muted);font-size:12px;"></span>
+      </div>
+      <div class="countries" id="countryList"></div>
+    </div>
+  </aside>
+
+  <main><div id="chart"></div></main>
+</div>
+
+<footer id="src"></footer>
+
+<script>
+const REGION_COLORS = {
+  Asia: "#E4572E", Europe: "#2E86AB", Africa: "#8A6FB0",
+  America: "#1B998B", Oceania: "#D4A017", Other: "#999999",
+};
+const REGION_ORDER = ["Asia", "Europe", "Africa", "America", "Oceania", "Other"];
+
+const state = {
+  scale: "log",
+  xmin: 0,
+  xmax: null,
+  regionsOn: new Set(REGION_ORDER),
+  countryOn: new Map(),   // iso3 -> bool
+  showWorld: true,
+  show100: true,
+};
+let DATA = null, chart = null;
+
+function fmtMoney(v) {
+  return "$" + Math.round(v).toLocaleString();
+}
+function symbolSize(gdpTot) {
+  // bubble area ∝ total GDP  =>  diameter ∝ sqrt(total GDP)
+  return Math.max(5, Math.sqrt(gdpTot) * 0.78);
+}
+
+function visibleCountries() {
+  return DATA.countries.filter(c =>
+    state.regionsOn.has(c.region) &&
+    state.countryOn.get(c.iso3) &&
+    c.gdp_pc >= state.xmin &&
+    (state.xmax == null || c.gdp_pc <= state.xmax)
+  );
+}
+
+function buildSeries() {
+  const byRegion = {};
+  for (const r of REGION_ORDER) byRegion[r] = [];
+  for (const c of visibleCountries()) {
+    byRegion[c.region].push({
+      value: [c.gdp_pc, c.share, c.gdp_tot],
+      name: c.name,
+      itemStyle: { color: REGION_COLORS[c.region] },
+    });
+  }
+  return REGION_ORDER.filter(r => byRegion[r].length).map(r => ({
+    name: r,
+    type: "scatter",
+    data: byRegion[r],
+    symbolSize: d => symbolSize(d[2]),
+    itemStyle: { borderColor: "#fff", borderWidth: 0.8, opacity: 0.78 },
+    emphasis: { focus: "self", itemStyle: { opacity: 1, borderColor: "#222", borderWidth: 1.2 } },
+  }));
+}
+
+function markLines() {
+  const lines = [];
+  if (state.showWorld)
+    lines.push({
+      yAxis: DATA.world_share, lineStyle: { color: "#444", type: "dashed", width: 1.3 },
+      label: { formatter: `World avg ${DATA.world_share.toFixed(0)}%`, position: "insideEndTop", color: "#444", fontStyle: "italic" },
+    });
+  if (state.show100)
+    lines.push({
+      yAxis: 100, lineStyle: { color: "#c0392b", type: "dotted", width: 1.2 },
+      label: { formatter: "AIC = GDP (100%)", position: "insideEndBottom", color: "#c0392b" },
+    });
+  return lines;
+}
+
+function render() {
+  const series = buildSeries();
+  // attach marklines to the first series (a single shared markLine layer)
+  if (series.length) {
+    series[0].markLine = {
+      silent: true, symbol: "none", animation: false,
+      data: markLines(),
+    };
+  }
+  chart.setOption({
+    grid: { left: 70, right: 28, top: 22, bottom: 56 },
+    tooltip: {
+      trigger: "item",
+      backgroundColor: "rgba(255,255,255,0.97)",
+      borderColor: "#ddd", textStyle: { color: "#1f2328" },
+      formatter: p => {
+        const [gdp, share, tot] = p.value;
+        return `<b>${p.name}</b><br/>` +
+          `<span style="color:${p.color}">●</span> ${p.seriesName}<br/>` +
+          `AIC share: <b>${share.toFixed(1)}%</b> of GDP<br/>` +
+          `GDP / capita: ${fmtMoney(gdp)}<br/>` +
+          `Total GDP: $${tot.toLocaleString()}B (PPP)`;
+      },
+    },
+    xAxis: {
+      type: state.scale === "log" ? "log" : "value",
+      name: "GDP per capita, PPP (int'l $, 2021)  →  more prosperous",
+      nameLocation: "middle", nameGap: 34, nameTextStyle: { color: "#555", fontSize: 12 },
+      min: state.xmin > 0 ? state.xmin : (state.scale === "log" ? 900 : 0),
+      max: state.xmax == null ? null : state.xmax,
+      axisLabel: { formatter: v => fmtMoney(v) },
+      splitLine: { lineStyle: { color: "#eee" } },
+    },
+    yAxis: {
+      type: "value",
+      name: "AIC as % of GDP  ↑ more flows to citizens",
+      nameLocation: "middle", nameGap: 46, nameTextStyle: { color: "#555", fontSize: 12 },
+      axisLabel: { formatter: "{value}%" },
+      splitLine: { lineStyle: { color: "#eee" } },
+    },
+    series,
+  }, { notMerge: true });
+  document.getElementById("visCount").textContent = visibleCountries().length + " shown";
+}
+
+function initChart() {
+  chart = echarts.init(document.getElementById("chart"));
+  window.addEventListener("resize", () => chart.resize());
+}
+
+/* ---------- sidebar wiring ---------- */
+function buildRegions() {
+  const counts = {};
+  for (const c of DATA.countries) counts[c.region] = (counts[c.region] || 0) + 1;
+  const host = document.getElementById("regionList");
+  host.innerHTML = "";
+  for (const r of REGION_ORDER) {
+    if (!counts[r]) continue;
+    const el = document.createElement("div");
+    el.className = "region";
+    el.innerHTML = `<span class="swatch" style="background:${REGION_COLORS[r]}"></span>
+                    <span>${r}</span><span class="count">${counts[r]}</span>`;
+    el.onclick = () => {
+      if (state.regionsOn.has(r)) state.regionsOn.delete(r); else state.regionsOn.add(r);
+      el.classList.toggle("off", !state.regionsOn.has(r));
+      render();
+    };
+    host.appendChild(el);
+  }
+}
+
+function buildCountryList() {
+  const host = document.getElementById("countryList");
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  host.innerHTML = "";
+  for (const c of DATA.countries) {
+    if (q && !c.name.toLowerCase().includes(q)) continue;
+    const row = document.createElement("label");
+    row.className = "citem";
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.checked = state.countryOn.get(c.iso3);
+    cb.onchange = () => { state.countryOn.set(c.iso3, cb.checked); render(); };
+    const dot = document.createElement("span");
+    dot.className = "dot"; dot.style.background = REGION_COLORS[c.region];
+    const nm = document.createElement("span");
+    nm.className = "nm"; nm.textContent = c.name;
+    row.append(cb, dot, nm);
+    host.appendChild(row);
+  }
+}
+
+function wireControls() {
+  document.querySelectorAll("#scaleSeg button").forEach(b => b.onclick = () => {
+    document.querySelectorAll("#scaleSeg button").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    state.scale = b.dataset.v;
+    render();
+  });
+  document.querySelectorAll("#rangeSeg button").forEach(b => b.onclick = () => {
+    document.querySelectorAll("#rangeSeg button").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    state.xmin = +b.dataset.min;
+    document.getElementById("minIn").value = state.xmin || "";
+    render();
+  });
+  document.getElementById("minIn").oninput = e => {
+    state.xmin = e.target.value === "" ? 0 : +e.target.value;
+    document.querySelectorAll("#rangeSeg button").forEach(x => x.classList.remove("active"));
+    render();
+  };
+  document.getElementById("maxIn").oninput = e => {
+    state.xmax = e.target.value === "" ? null : +e.target.value;
+    render();
+  };
+  document.getElementById("lineWorld").onchange = e => { state.showWorld = e.target.checked; render(); };
+  document.getElementById("line100").onchange = e => { state.show100 = e.target.checked; render(); };
+  document.getElementById("search").oninput = buildCountryList;
+  document.getElementById("selAll").onclick = () => {
+    for (const c of DATA.countries) state.countryOn.set(c.iso3, true);
+    buildCountryList(); render();
+  };
+  document.getElementById("selNone").onclick = () => {
+    for (const c of DATA.countries) state.countryOn.set(c.iso3, false);
+    buildCountryList(); render();
+  };
+}
+
+async function boot() {
+  DATA = await fetch("data.json").then(r => r.json());
+  for (const c of DATA.countries) state.countryOn.set(c.iso3, true);
+  document.getElementById("wsTxt").textContent = DATA.world_share.toFixed(0);
+  document.getElementById("src").innerHTML =
+    "Source: " + DATA.source + ' &nbsp;<a href="https://www.worldbank.org/en/programs/icp" target="_blank">worldbank.org/icp</a>';
+  initChart();
+  buildRegions();
+  buildCountryList();
+  wireControls();
+  render();
+}
+boot().catch(e => {
+  document.getElementById("chart").innerHTML =
+    '<div style="padding:40px;color:#c0392b">Could not load data.json. ' +
+    'Open this page through a local web server (e.g. <code>python3 -m http.server</code>), not a file:// URL.<br/><br/>' + e + '</div>';
+});
+</script>
+</body>
+</html>

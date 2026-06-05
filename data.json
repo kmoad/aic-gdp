@@ -1,0 +1,1736 @@
+{
+ "world_share": 63.88,
+ "source": "World Bank, International Comparison Program (ICP) 2021 cycle (released May 2024). Reference year 2021, PPP terms.",
+ "countries": [
+  {
+   "name": "Albania",
+   "iso3": "ALB",
+   "region": "Europe",
+   "gdp_pc": 16262.6,
+   "aic_pc": 12780.8,
+   "gdp_tot": 45.73,
+   "aic_tot": 35.94,
+   "share": 78.59
+  },
+  {
+   "name": "Algeria",
+   "iso3": "DZA",
+   "region": "Africa",
+   "gdp_pc": 12893.2,
+   "aic_pc": 7703.6,
+   "gdp_tot": 569.6,
+   "aic_tot": 340.33,
+   "share": 59.75
+  },
+  {
+   "name": "Angola",
+   "iso3": "AGO",
+   "region": "Africa",
+   "gdp_pc": 7415.1,
+   "aic_pc": 3275.3,
+   "gdp_tot": 255.85,
+   "aic_tot": 113.01,
+   "share": 44.17
+  },
+  {
+   "name": "Anguilla",
+   "iso3": "AIA",
+   "region": "America",
+   "gdp_pc": 24605.8,
+   "aic_pc": 23222.3,
+   "gdp_tot": 0.39,
+   "aic_tot": 0.37,
+   "share": 94.38
+  },
+  {
+   "name": "Antigua and Barbuda",
+   "iso3": "ATG",
+   "region": "America",
+   "gdp_pc": 25492.9,
+   "aic_pc": 13037.1,
+   "gdp_tot": 2.38,
+   "aic_tot": 1.22,
+   "share": 51.14
+  },
+  {
+   "name": "Argentina",
+   "iso3": "ARG",
+   "region": "America",
+   "gdp_pc": 26356.8,
+   "aic_pc": 19436.9,
+   "gdp_tot": 1193.35,
+   "aic_tot": 880.04,
+   "share": 73.75
+  },
+  {
+   "name": "Armenia",
+   "iso3": "ARM",
+   "region": "Asia",
+   "gdp_pc": 15921.7,
+   "aic_pc": 12841.9,
+   "gdp_tot": 47.16,
+   "aic_tot": 38.04,
+   "share": 80.66
+  },
+  {
+   "name": "Aruba",
+   "iso3": "ABW",
+   "region": "America",
+   "gdp_pc": 38816.9,
+   "aic_pc": 24458.8,
+   "gdp_tot": 4.14,
+   "aic_tot": 2.61,
+   "share": 63.01
+  },
+  {
+   "name": "Australia",
+   "iso3": "AUS",
+   "region": "Oceania",
+   "gdp_pc": 60638.9,
+   "aic_pc": 37030.3,
+   "gdp_tot": 1557.53,
+   "aic_tot": 951.14,
+   "share": 61.07
+  },
+  {
+   "name": "Austria",
+   "iso3": "AUT",
+   "region": "Europe",
+   "gdp_pc": 63451.5,
+   "aic_pc": 39180.0,
+   "gdp_tot": 567.99,
+   "aic_tot": 350.72,
+   "share": 61.75
+  },
+  {
+   "name": "Azerbaijan",
+   "iso3": "AZE",
+   "region": "Asia",
+   "gdp_pc": 20297.7,
+   "aic_pc": 12799.6,
+   "gdp_tot": 203.88,
+   "aic_tot": 128.57,
+   "share": 63.06
+  },
+  {
+   "name": "Bahrain",
+   "iso3": "BHR",
+   "region": "Asia",
+   "gdp_pc": 52886.7,
+   "aic_pc": 23539.8,
+   "gdp_tot": 79.56,
+   "aic_tot": 35.41,
+   "share": 44.51
+  },
+  {
+   "name": "Bangladesh",
+   "iso3": "BGD",
+   "region": "Asia",
+   "gdp_pc": 7785.6,
+   "aic_pc": 5706.7,
+   "gdp_tot": 1325.58,
+   "aic_tot": 971.62,
+   "share": 73.3
+  },
+  {
+   "name": "Belarus",
+   "iso3": "BLR",
+   "region": "Europe",
+   "gdp_pc": 27611.2,
+   "aic_pc": 17721.0,
+   "gdp_tot": 256.86,
+   "aic_tot": 164.85,
+   "share": 64.18
+  },
+  {
+   "name": "Belgium",
+   "iso3": "BEL",
+   "region": "Europe",
+   "gdp_pc": 62077.1,
+   "aic_pc": 38171.8,
+   "gdp_tot": 719.59,
+   "aic_tot": 442.48,
+   "share": 61.49
+  },
+  {
+   "name": "Belize",
+   "iso3": "BLZ",
+   "region": "America",
+   "gdp_pc": 11559.9,
+   "aic_pc": 8195.0,
+   "gdp_tot": 4.62,
+   "aic_tot": 3.28,
+   "share": 70.89
+  },
+  {
+   "name": "Benin",
+   "iso3": "BEN",
+   "region": "Africa",
+   "gdp_pc": 3575.3,
+   "aic_pc": 2712.6,
+   "gdp_tot": 46.47,
+   "aic_tot": 35.26,
+   "share": 75.87
+  },
+  {
+   "name": "Bermuda",
+   "iso3": "BMU",
+   "region": "America",
+   "gdp_pc": 90577.1,
+   "aic_pc": 44805.9,
+   "gdp_tot": 5.81,
+   "aic_tot": 2.88,
+   "share": 49.47
+  },
+  {
+   "name": "Bhutan",
+   "iso3": "BTN",
+   "region": "Asia",
+   "gdp_pc": 13802.6,
+   "aic_pc": 8852.3,
+   "gdp_tot": 10.44,
+   "aic_tot": 6.69,
+   "share": 64.13
+  },
+  {
+   "name": "Bolivia",
+   "iso3": "BOL",
+   "region": "America",
+   "gdp_pc": 9343.0,
+   "aic_pc": 7618.5,
+   "gdp_tot": 112.86,
+   "aic_tot": 92.03,
+   "share": 81.54
+  },
+  {
+   "name": "Bosnia and Herzegovina",
+   "iso3": "BIH",
+   "region": "Europe",
+   "gdp_pc": 17427.4,
+   "aic_pc": 13489.7,
+   "gdp_tot": 60.18,
+   "aic_tot": 46.58,
+   "share": 77.41
+  },
+  {
+   "name": "Botswana",
+   "iso3": "BWA",
+   "region": "Africa",
+   "gdp_pc": 16651.5,
+   "aic_pc": 8645.6,
+   "gdp_tot": 43.1,
+   "aic_tot": 22.38,
+   "share": 51.92
+  },
+  {
+   "name": "Brazil",
+   "iso3": "BRA",
+   "region": "America",
+   "gdp_pc": 17310.3,
+   "aic_pc": 12584.5,
+   "gdp_tot": 3710.06,
+   "aic_tot": 2697.19,
+   "share": 72.7
+  },
+  {
+   "name": "Brunei Darussalam",
+   "iso3": "BRN",
+   "region": "Asia",
+   "gdp_pc": 80202.9,
+   "aic_pc": 23492.3,
+   "gdp_tot": 35.35,
+   "aic_tot": 10.35,
+   "share": 29.29
+  },
+  {
+   "name": "Bulgaria",
+   "iso3": "BGR",
+   "region": "Europe",
+   "gdp_pc": 29406.4,
+   "aic_pc": 21119.3,
+   "gdp_tot": 202.25,
+   "aic_tot": 145.25,
+   "share": 71.82
+  },
+  {
+   "name": "Burkina Faso",
+   "iso3": "BFA",
+   "region": "Africa",
+   "gdp_pc": 2563.9,
+   "aic_pc": 1859.2,
+   "gdp_tot": 56.66,
+   "aic_tot": 41.09,
+   "share": 72.51
+  },
+  {
+   "name": "Burundi",
+   "iso3": "BDI",
+   "region": "Africa",
+   "gdp_pc": 981.1,
+   "aic_pc": 937.4,
+   "gdp_tot": 12.31,
+   "aic_tot": 11.77,
+   "share": 95.55
+  },
+  {
+   "name": "Cabo Verde",
+   "iso3": "CPV",
+   "region": "Africa",
+   "gdp_pc": 5810.0,
+   "aic_pc": 4862.4,
+   "gdp_tot": 3.42,
+   "aic_tot": 2.86,
+   "share": 83.69
+  },
+  {
+   "name": "Cambodia",
+   "iso3": "KHM",
+   "region": "Asia",
+   "gdp_pc": 4667.4,
+   "aic_pc": 3283.6,
+   "gdp_tot": 77.44,
+   "aic_tot": 54.48,
+   "share": 70.35
+  },
+  {
+   "name": "Cameroon",
+   "iso3": "CMR",
+   "region": "Africa",
+   "gdp_pc": 4778.1,
+   "aic_pc": 3907.2,
+   "gdp_tot": 129.96,
+   "aic_tot": 106.27,
+   "share": 81.77
+  },
+  {
+   "name": "Canada",
+   "iso3": "CAN",
+   "region": "America",
+   "gdp_pc": 55781.7,
+   "aic_pc": 37061.7,
+   "gdp_tot": 2133.08,
+   "aic_tot": 1417.23,
+   "share": 66.44
+  },
+  {
+   "name": "Cayman Islands",
+   "iso3": "CYM",
+   "region": "America",
+   "gdp_pc": 75898.1,
+   "aic_pc": 37818.1,
+   "gdp_tot": 5.17,
+   "aic_tot": 2.58,
+   "share": 49.83
+  },
+  {
+   "name": "Central African Republic",
+   "iso3": "CAF",
+   "region": "Africa",
+   "gdp_pc": 1084.5,
+   "aic_pc": 923.0,
+   "gdp_tot": 5.92,
+   "aic_tot": 5.04,
+   "share": 85.11
+  },
+  {
+   "name": "Chad",
+   "iso3": "TCD",
+   "region": "Africa",
+   "gdp_pc": 2305.8,
+   "aic_pc": 1734.5,
+   "gdp_tot": 39.61,
+   "aic_tot": 29.8,
+   "share": 75.22
+  },
+  {
+   "name": "Chile",
+   "iso3": "CHL",
+   "region": "America",
+   "gdp_pc": 28873.9,
+   "aic_pc": 20621.8,
+   "gdp_tot": 568.19,
+   "aic_tot": 405.8,
+   "share": 71.42
+  },
+  {
+   "name": "China",
+   "iso3": "CHN",
+   "region": "Asia",
+   "gdp_pc": 20406.7,
+   "aic_pc": 9285.6,
+   "gdp_tot": 28821.65,
+   "aic_tot": 13114.55,
+   "share": 45.5
+  },
+  {
+   "name": "Colombia",
+   "iso3": "COL",
+   "region": "America",
+   "gdp_pc": 18141.2,
+   "aic_pc": 14472.3,
+   "gdp_tot": 906.0,
+   "aic_tot": 722.76,
+   "share": 79.78
+  },
+  {
+   "name": "Comoros",
+   "iso3": "COM",
+   "region": "Africa",
+   "gdp_pc": 3548.8,
+   "aic_pc": 3301.4,
+   "gdp_tot": 2.92,
+   "aic_tot": 2.71,
+   "share": 93.03
+  },
+  {
+   "name": "Congo, Dem. Rep.",
+   "iso3": "COD",
+   "region": "Africa",
+   "gdp_pc": 1527.6,
+   "aic_pc": 688.7,
+   "gdp_tot": 160.77,
+   "aic_tot": 72.48,
+   "share": 45.09
+  },
+  {
+   "name": "Congo, Rep.",
+   "iso3": "COG",
+   "region": "Africa",
+   "gdp_pc": 6286.2,
+   "aic_pc": 3100.6,
+   "gdp_tot": 36.68,
+   "aic_tot": 18.09,
+   "share": 49.32
+  },
+  {
+   "name": "Costa Rica",
+   "iso3": "CRI",
+   "region": "America",
+   "gdp_pc": 23667.7,
+   "aic_pc": 16677.7,
+   "gdp_tot": 122.15,
+   "aic_tot": 86.07,
+   "share": 70.47
+  },
+  {
+   "name": "Cote d'Ivoire",
+   "iso3": "CIV",
+   "region": "Africa",
+   "gdp_pc": 6330.7,
+   "aic_pc": 4843.6,
+   "gdp_tot": 173.96,
+   "aic_tot": 133.09,
+   "share": 76.51
+  },
+  {
+   "name": "Croatia",
+   "iso3": "HRV",
+   "region": "Europe",
+   "gdp_pc": 36219.3,
+   "aic_pc": 24306.7,
+   "gdp_tot": 143.35,
+   "aic_tot": 96.2,
+   "share": 67.11
+  },
+  {
+   "name": "Curacao",
+   "iso3": "CUW",
+   "region": "America",
+   "gdp_pc": 20144.1,
+   "aic_pc": 15516.1,
+   "gdp_tot": 3.83,
+   "aic_tot": 2.95,
+   "share": 77.03
+  },
+  {
+   "name": "Cyprus",
+   "iso3": "CYP",
+   "region": "Asia",
+   "gdp_pc": 48469.4,
+   "aic_pc": 31484.9,
+   "gdp_tot": 43.64,
+   "aic_tot": 28.35,
+   "share": 64.96
+  },
+  {
+   "name": "Czechia",
+   "iso3": "CZE",
+   "region": "Europe",
+   "gdp_pc": 47551.2,
+   "aic_pc": 28481.8,
+   "gdp_tot": 508.67,
+   "aic_tot": 304.68,
+   "share": 59.9
+  },
+  {
+   "name": "Denmark",
+   "iso3": "DNK",
+   "region": "Europe",
+   "gdp_pc": 69911.6,
+   "aic_pc": 40109.5,
+   "gdp_tot": 409.26,
+   "aic_tot": 234.8,
+   "share": 57.37
+  },
+  {
+   "name": "Djibouti",
+   "iso3": "DJI",
+   "region": "Africa",
+   "gdp_pc": 6107.2,
+   "aic_pc": 4654.6,
+   "gdp_tot": 6.75,
+   "aic_tot": 5.15,
+   "share": 76.22
+  },
+  {
+   "name": "Dominica",
+   "iso3": "DMA",
+   "region": "America",
+   "gdp_pc": 14472.1,
+   "aic_pc": 13994.1,
+   "gdp_tot": 1.05,
+   "aic_tot": 1.01,
+   "share": 96.7
+  },
+  {
+   "name": "Dominican Republic",
+   "iso3": "DOM",
+   "region": "America",
+   "gdp_pc": 21923.2,
+   "aic_pc": 16478.3,
+   "gdp_tot": 243.74,
+   "aic_tot": 183.2,
+   "share": 75.16
+  },
+  {
+   "name": "Ecuador",
+   "iso3": "ECU",
+   "region": "America",
+   "gdp_pc": 13293.1,
+   "aic_pc": 9144.2,
+   "gdp_tot": 236.59,
+   "aic_tot": 162.75,
+   "share": 68.79
+  },
+  {
+   "name": "Egypt, Arab Rep.",
+   "iso3": "EGY",
+   "region": "Africa",
+   "gdp_pc": 17158.4,
+   "aic_pc": 15776.6,
+   "gdp_tot": 1874.76,
+   "aic_tot": 1723.79,
+   "share": 91.95
+  },
+  {
+   "name": "El Salvador",
+   "iso3": "SLV",
+   "region": "America",
+   "gdp_pc": 10860.2,
+   "aic_pc": 9602.8,
+   "gdp_tot": 68.57,
+   "aic_tot": 60.63,
+   "share": 88.42
+  },
+  {
+   "name": "Equatorial Guinea",
+   "iso3": "GNQ",
+   "region": "Africa",
+   "gdp_pc": 18180.2,
+   "aic_pc": 11580.0,
+   "gdp_tot": 29.71,
+   "aic_tot": 18.93,
+   "share": 63.7
+  },
+  {
+   "name": "Estonia",
+   "iso3": "EST",
+   "region": "Europe",
+   "gdp_pc": 44681.1,
+   "aic_pc": 26235.6,
+   "gdp_tot": 59.43,
+   "aic_tot": 34.9,
+   "share": 58.72
+  },
+  {
+   "name": "Eswatini",
+   "iso3": "SWZ",
+   "region": "Africa",
+   "gdp_pc": 9428.3,
+   "aic_pc": 7390.1,
+   "gdp_tot": 11.24,
+   "aic_tot": 8.81,
+   "share": 78.38
+  },
+  {
+   "name": "Ethiopia",
+   "iso3": "ETH",
+   "region": "Africa",
+   "gdp_pc": 3178.3,
+   "aic_pc": 2781.4,
+   "gdp_tot": 382.29,
+   "aic_tot": 334.56,
+   "share": 87.51
+  },
+  {
+   "name": "Fiji",
+   "iso3": "FJI",
+   "region": "Oceania",
+   "gdp_pc": 10963.2,
+   "aic_pc": 10211.6,
+   "gdp_tot": 9.8,
+   "aic_tot": 9.12,
+   "share": 93.14
+  },
+  {
+   "name": "Finland",
+   "iso3": "FIN",
+   "region": "Europe",
+   "gdp_pc": 57843.5,
+   "aic_pc": 37067.0,
+   "gdp_tot": 320.54,
+   "aic_tot": 205.41,
+   "share": 64.08
+  },
+  {
+   "name": "France",
+   "iso3": "FRA",
+   "region": "Europe",
+   "gdp_pc": 53462.6,
+   "aic_pc": 36402.8,
+   "gdp_tot": 3648.08,
+   "aic_tot": 2483.98,
+   "share": 68.09
+  },
+  {
+   "name": "Gabon",
+   "iso3": "GAB",
+   "region": "Africa",
+   "gdp_pc": 19546.4,
+   "aic_pc": 6339.5,
+   "gdp_tot": 45.76,
+   "aic_tot": 14.84,
+   "share": 32.43
+  },
+  {
+   "name": "Gambia, The",
+   "iso3": "GMB",
+   "region": "Africa",
+   "gdp_pc": 2710.6,
+   "aic_pc": 2709.8,
+   "gdp_tot": 7.16,
+   "aic_tot": 7.15,
+   "share": 99.97
+  },
+  {
+   "name": "Georgia",
+   "iso3": "GEO",
+   "region": "Asia",
+   "gdp_pc": 18691.2,
+   "aic_pc": 15769.4,
+   "gdp_tot": 69.32,
+   "aic_tot": 58.48,
+   "share": 84.37
+  },
+  {
+   "name": "Germany",
+   "iso3": "DEU",
+   "region": "Europe",
+   "gdp_pc": 61939.7,
+   "aic_pc": 39742.2,
+   "gdp_tot": 5153.14,
+   "aic_tot": 3306.39,
+   "share": 64.16
+  },
+  {
+   "name": "Ghana",
+   "iso3": "GHA",
+   "region": "Africa",
+   "gdp_pc": 6670.3,
+   "aic_pc": 5139.2,
+   "gdp_tot": 219.01,
+   "aic_tot": 168.74,
+   "share": 77.05
+  },
+  {
+   "name": "Greece",
+   "iso3": "GRC",
+   "region": "Europe",
+   "gdp_pc": 32797.3,
+   "aic_pc": 24898.7,
+   "gdp_tot": 348.98,
+   "aic_tot": 264.93,
+   "share": 75.92
+  },
+  {
+   "name": "Grenada",
+   "iso3": "GRD",
+   "region": "America",
+   "gdp_pc": 14325.6,
+   "aic_pc": 12550.2,
+   "gdp_tot": 1.79,
+   "aic_tot": 1.56,
+   "share": 87.61
+  },
+  {
+   "name": "Guatemala",
+   "iso3": "GTM",
+   "region": "America",
+   "gdp_pc": 11763.5,
+   "aic_pc": 10727.1,
+   "gdp_tot": 207.14,
+   "aic_tot": 188.89,
+   "share": 91.19
+  },
+  {
+   "name": "Guinea",
+   "iso3": "GIN",
+   "region": "Africa",
+   "gdp_pc": 3676.9,
+   "aic_pc": 3676.1,
+   "gdp_tot": 49.76,
+   "aic_tot": 49.74,
+   "share": 99.98
+  },
+  {
+   "name": "Guinea-Bissau",
+   "iso3": "GNB",
+   "region": "Africa",
+   "gdp_pc": 2375.0,
+   "aic_pc": 2028.1,
+   "gdp_tot": 4.89,
+   "aic_tot": 4.18,
+   "share": 85.39
+  },
+  {
+   "name": "Guyana",
+   "iso3": "GUY",
+   "region": "America",
+   "gdp_pc": 23185.2,
+   "aic_pc": 16498.5,
+   "gdp_tot": 18.65,
+   "aic_tot": 13.27,
+   "share": 71.16
+  },
+  {
+   "name": "Honduras",
+   "iso3": "HND",
+   "region": "America",
+   "gdp_pc": 6286.0,
+   "aic_pc": 5770.6,
+   "gdp_tot": 64.61,
+   "aic_tot": 59.31,
+   "share": 91.8
+  },
+  {
+   "name": "Hong Kong SAR, China",
+   "iso3": "HKG",
+   "region": "Asia",
+   "gdp_pc": 65876.9,
+   "aic_pc": 44577.4,
+   "gdp_tot": 488.35,
+   "aic_tot": 330.46,
+   "share": 67.67
+  },
+  {
+   "name": "Hungary",
+   "iso3": "HUN",
+   "region": "Europe",
+   "gdp_pc": 38643.8,
+   "aic_pc": 22915.8,
+   "gdp_tot": 375.23,
+   "aic_tot": 222.51,
+   "share": 59.3
+  },
+  {
+   "name": "Iceland",
+   "iso3": "ISL",
+   "region": "Europe",
+   "gdp_pc": 61484.7,
+   "aic_pc": 39643.3,
+   "gdp_tot": 22.9,
+   "aic_tot": 14.77,
+   "share": 64.48
+  },
+  {
+   "name": "India",
+   "iso3": "IND",
+   "region": "Asia",
+   "gdp_pc": 8018.8,
+   "aic_pc": 5745.1,
+   "gdp_tot": 10963.15,
+   "aic_tot": 7854.53,
+   "share": 71.64
+  },
+  {
+   "name": "Indonesia",
+   "iso3": "IDN",
+   "region": "Asia",
+   "gdp_pc": 12947.7,
+   "aic_pc": 7641.6,
+   "gdp_tot": 3530.62,
+   "aic_tot": 2083.74,
+   "share": 59.02
+  },
+  {
+   "name": "Iraq",
+   "iso3": "IRQ",
+   "region": "Asia",
+   "gdp_pc": 12420.7,
+   "aic_pc": 6468.5,
+   "gdp_tot": 507.95,
+   "aic_tot": 264.53,
+   "share": 52.08
+  },
+  {
+   "name": "Ireland",
+   "iso3": "IRL",
+   "region": "Europe",
+   "gdp_pc": 114451.0,
+   "aic_pc": 30159.7,
+   "gdp_tot": 574.39,
+   "aic_tot": 151.36,
+   "share": 26.35
+  },
+  {
+   "name": "Israel",
+   "iso3": "ISR",
+   "region": "Asia",
+   "gdp_pc": 46258.4,
+   "aic_pc": 27294.2,
+   "gdp_tot": 433.32,
+   "aic_tot": 255.67,
+   "share": 59.0
+  },
+  {
+   "name": "Italy",
+   "iso3": "ITA",
+   "region": "Europe",
+   "gdp_pc": 49912.8,
+   "aic_pc": 32184.8,
+   "gdp_tot": 2951.5,
+   "aic_tot": 1903.19,
+   "share": 64.48
+  },
+  {
+   "name": "Jamaica",
+   "iso3": "JAM",
+   "region": "America",
+   "gdp_pc": 9611.0,
+   "aic_pc": 7974.6,
+   "gdp_tot": 27.18,
+   "aic_tot": 22.55,
+   "share": 82.97
+  },
+  {
+   "name": "Japan",
+   "iso3": "JPN",
+   "region": "Asia",
+   "gdp_pc": 44355.4,
+   "aic_pc": 29637.3,
+   "gdp_tot": 5566.69,
+   "aic_tot": 3719.53,
+   "share": 66.82
+  },
+  {
+   "name": "Jordan",
+   "iso3": "JOR",
+   "region": "Asia",
+   "gdp_pc": 9059.5,
+   "aic_pc": 8021.2,
+   "gdp_tot": 99.03,
+   "aic_tot": 87.68,
+   "share": 88.54
+  },
+  {
+   "name": "Kazakhstan",
+   "iso3": "KAZ",
+   "region": "Asia",
+   "gdp_pc": 34230.6,
+   "aic_pc": 20468.6,
+   "gdp_tot": 650.47,
+   "aic_tot": 388.96,
+   "share": 59.8
+  },
+  {
+   "name": "Kenya",
+   "iso3": "KEN",
+   "region": "Africa",
+   "gdp_pc": 5360.4,
+   "aic_pc": 4578.9,
+   "gdp_tot": 284.13,
+   "aic_tot": 242.71,
+   "share": 85.42
+  },
+  {
+   "name": "Korea, Rep.",
+   "iso3": "KOR",
+   "region": "Asia",
+   "gdp_pc": 48594.5,
+   "aic_pc": 25885.2,
+   "gdp_tot": 2514.52,
+   "aic_tot": 1339.43,
+   "share": 53.27
+  },
+  {
+   "name": "Kuwait",
+   "iso3": "KWT",
+   "region": "Asia",
+   "gdp_pc": 48685.0,
+   "aic_pc": 30021.4,
+   "gdp_tot": 211.1,
+   "aic_tot": 130.17,
+   "share": 61.66
+  },
+  {
+   "name": "Kyrgyz Republic",
+   "iso3": "KGZ",
+   "region": "Asia",
+   "gdp_pc": 5736.5,
+   "aic_pc": 5269.8,
+   "gdp_tot": 39.3,
+   "aic_tot": 36.1,
+   "share": 91.87
+  },
+  {
+   "name": "Lao PDR",
+   "iso3": "LAO",
+   "region": "Asia",
+   "gdp_pc": 8315.3,
+   "aic_pc": 4296.1,
+   "gdp_tot": 61.02,
+   "aic_tot": 31.52,
+   "share": 51.66
+  },
+  {
+   "name": "Latvia",
+   "iso3": "LVA",
+   "region": "Europe",
+   "gdp_pc": 36806.9,
+   "aic_pc": 24636.7,
+   "gdp_tot": 69.31,
+   "aic_tot": 46.39,
+   "share": 66.93
+  },
+  {
+   "name": "Lebanon",
+   "iso3": "LBN",
+   "region": "Asia",
+   "gdp_pc": 8403.6,
+   "aic_pc": 9151.6,
+   "gdp_tot": 47.0,
+   "aic_tot": 51.18,
+   "share": 108.9
+  },
+  {
+   "name": "Lesotho",
+   "iso3": "LSO",
+   "region": "Africa",
+   "gdp_pc": 2482.1,
+   "aic_pc": 2685.0,
+   "gdp_tot": 5.66,
+   "aic_tot": 6.13,
+   "share": 108.17
+  },
+  {
+   "name": "Liberia",
+   "iso3": "LBR",
+   "region": "Africa",
+   "gdp_pc": 1659.1,
+   "aic_pc": 1691.7,
+   "gdp_tot": 8.62,
+   "aic_tot": 8.79,
+   "share": 101.97
+  },
+  {
+   "name": "Lithuania",
+   "iso3": "LTU",
+   "region": "Europe",
+   "gdp_pc": 46285.3,
+   "aic_pc": 31893.6,
+   "gdp_tot": 129.99,
+   "aic_tot": 89.57,
+   "share": 68.91
+  },
+  {
+   "name": "Luxembourg",
+   "iso3": "LUX",
+   "region": "Europe",
+   "gdp_pc": 137948.2,
+   "aic_pc": 47418.9,
+   "gdp_tot": 88.3,
+   "aic_tot": 30.35,
+   "share": 34.37
+  },
+  {
+   "name": "Madagascar",
+   "iso3": "MDG",
+   "region": "Africa",
+   "gdp_pc": 1642.3,
+   "aic_pc": 1503.9,
+   "gdp_tot": 47.49,
+   "aic_tot": 43.48,
+   "share": 91.57
+  },
+  {
+   "name": "Malawi",
+   "iso3": "MWI",
+   "region": "Africa",
+   "gdp_pc": 1701.0,
+   "aic_pc": 1536.2,
+   "gdp_tot": 33.83,
+   "aic_tot": 30.55,
+   "share": 90.31
+  },
+  {
+   "name": "Malaysia",
+   "iso3": "MYS",
+   "region": "Asia",
+   "gdp_pc": 31388.7,
+   "aic_pc": 21122.2,
+   "gdp_tot": 1022.53,
+   "aic_tot": 688.08,
+   "share": 67.29
+  },
+  {
+   "name": "Maldives",
+   "iso3": "MDV",
+   "region": "Asia",
+   "gdp_pc": 17308.7,
+   "aic_pc": 8906.6,
+   "gdp_tot": 9.84,
+   "aic_tot": 5.06,
+   "share": 51.46
+  },
+  {
+   "name": "Mali",
+   "iso3": "MLI",
+   "region": "Africa",
+   "gdp_pc": 2854.6,
+   "aic_pc": 2456.3,
+   "gdp_tot": 62.53,
+   "aic_tot": 53.8,
+   "share": 86.05
+  },
+  {
+   "name": "Malta",
+   "iso3": "MLT",
+   "region": "Europe",
+   "gdp_pc": 53493.6,
+   "aic_pc": 27435.8,
+   "gdp_tot": 27.75,
+   "aic_tot": 14.23,
+   "share": 51.29
+  },
+  {
+   "name": "Mauritania",
+   "iso3": "MRT",
+   "region": "Africa",
+   "gdp_pc": 5988.2,
+   "aic_pc": 3822.5,
+   "gdp_tot": 27.64,
+   "aic_tot": 17.64,
+   "share": 63.83
+  },
+  {
+   "name": "Mauritius",
+   "iso3": "MUS",
+   "region": "Africa",
+   "gdp_pc": 22246.1,
+   "aic_pc": 17522.8,
+   "gdp_tot": 28.9,
+   "aic_tot": 22.76,
+   "share": 78.77
+  },
+  {
+   "name": "Mexico",
+   "iso3": "MEX",
+   "region": "America",
+   "gdp_pc": 20981.2,
+   "aic_pc": 16265.1,
+   "gdp_tot": 2677.52,
+   "aic_tot": 2075.67,
+   "share": 77.52
+  },
+  {
+   "name": "Moldova",
+   "iso3": "MDA",
+   "region": "Europe",
+   "gdp_pc": 15564.2,
+   "aic_pc": 15712.3,
+   "gdp_tot": 40.71,
+   "aic_tot": 41.09,
+   "share": 100.95
+  },
+  {
+   "name": "Mongolia",
+   "iso3": "MNG",
+   "region": "Asia",
+   "gdp_pc": 15247.2,
+   "aic_pc": 9455.1,
+   "gdp_tot": 50.05,
+   "aic_tot": 31.04,
+   "share": 62.01
+  },
+  {
+   "name": "Montenegro",
+   "iso3": "MNE",
+   "region": "Europe",
+   "gdp_pc": 24511.1,
+   "aic_pc": 19664.9,
+   "gdp_tot": 15.18,
+   "aic_tot": 12.18,
+   "share": 80.23
+  },
+  {
+   "name": "Montserrat",
+   "iso3": "MSR",
+   "region": "America",
+   "gdp_pc": 26632.3,
+   "aic_pc": 23962.4,
+   "gdp_tot": 0.12,
+   "aic_tot": 0.11,
+   "share": 89.98
+  },
+  {
+   "name": "Morocco",
+   "iso3": "MAR",
+   "region": "Africa",
+   "gdp_pc": 8895.4,
+   "aic_pc": 6219.1,
+   "gdp_tot": 323.02,
+   "aic_tot": 225.84,
+   "share": 69.91
+  },
+  {
+   "name": "Mozambique",
+   "iso3": "MOZ",
+   "region": "Africa",
+   "gdp_pc": 1440.5,
+   "aic_pc": 1198.7,
+   "gdp_tot": 46.21,
+   "aic_tot": 38.45,
+   "share": 83.21
+  },
+  {
+   "name": "Namibia",
+   "iso3": "NAM",
+   "region": "Africa",
+   "gdp_pc": 10705.2,
+   "aic_pc": 9108.2,
+   "gdp_tot": 27.09,
+   "aic_tot": 23.05,
+   "share": 85.08
+  },
+  {
+   "name": "Nepal",
+   "iso3": "NPL",
+   "region": "Asia",
+   "gdp_pc": 4813.1,
+   "aic_pc": 4338.4,
+   "gdp_tot": 139.87,
+   "aic_tot": 126.07,
+   "share": 90.14
+  },
+  {
+   "name": "Netherlands",
+   "iso3": "NLD",
+   "region": "Europe",
+   "gdp_pc": 67693.5,
+   "aic_pc": 37898.2,
+   "gdp_tot": 1186.87,
+   "aic_tot": 664.47,
+   "share": 55.98
+  },
+  {
+   "name": "New Zealand",
+   "iso3": "NZL",
+   "region": "Oceania",
+   "gdp_pc": 47426.2,
+   "aic_pc": 34710.1,
+   "gdp_tot": 242.52,
+   "aic_tot": 177.5,
+   "share": 73.19
+  },
+  {
+   "name": "Nicaragua",
+   "iso3": "NIC",
+   "region": "America",
+   "gdp_pc": 6874.6,
+   "aic_pc": 5486.7,
+   "gdp_tot": 47.09,
+   "aic_tot": 37.59,
+   "share": 79.81
+  },
+  {
+   "name": "Niger",
+   "iso3": "NER",
+   "region": "Africa",
+   "gdp_pc": 1538.5,
+   "aic_pc": 1276.8,
+   "gdp_tot": 38.85,
+   "aic_tot": 32.24,
+   "share": 82.99
+  },
+  {
+   "name": "Nigeria",
+   "iso3": "NGA",
+   "region": "Africa",
+   "gdp_pc": 5623.7,
+   "aic_pc": 3730.8,
+   "gdp_tot": 1200.1,
+   "aic_tot": 796.15,
+   "share": 66.34
+  },
+  {
+   "name": "North Macedonia",
+   "iso3": "MKD",
+   "region": "Europe",
+   "gdp_pc": 21045.5,
+   "aic_pc": 16038.9,
+   "gdp_tot": 41.1,
+   "aic_tot": 31.32,
+   "share": 76.21
+  },
+  {
+   "name": "Norway",
+   "iso3": "NOR",
+   "region": "Europe",
+   "gdp_pc": 86897.1,
+   "aic_pc": 42010.3,
+   "gdp_tot": 469.94,
+   "aic_tot": 227.19,
+   "share": 48.34
+  },
+  {
+   "name": "Oman",
+   "iso3": "OMN",
+   "region": "Asia",
+   "gdp_pc": 38871.0,
+   "aic_pc": 20257.4,
+   "gdp_tot": 175.99,
+   "aic_tot": 91.71,
+   "share": 52.11
+  },
+  {
+   "name": "Pakistan",
+   "iso3": "PAK",
+   "region": "Asia",
+   "gdp_pc": 6270.6,
+   "aic_pc": 6021.5,
+   "gdp_tot": 1409.5,
+   "aic_tot": 1353.53,
+   "share": 96.03
+  },
+  {
+   "name": "Panama",
+   "iso3": "PAN",
+   "region": "America",
+   "gdp_pc": 30895.6,
+   "aic_pc": 16870.2,
+   "gdp_tot": 134.44,
+   "aic_tot": 73.41,
+   "share": 54.6
+  },
+  {
+   "name": "Paraguay",
+   "iso3": "PRY",
+   "region": "America",
+   "gdp_pc": 15361.1,
+   "aic_pc": 10900.0,
+   "gdp_tot": 102.98,
+   "aic_tot": 73.07,
+   "share": 70.96
+  },
+  {
+   "name": "Peru",
+   "iso3": "PER",
+   "region": "America",
+   "gdp_pc": 14853.6,
+   "aic_pc": 10030.2,
+   "gdp_tot": 500.8,
+   "aic_tot": 338.17,
+   "share": 67.53
+  },
+  {
+   "name": "Philippines",
+   "iso3": "PHL",
+   "region": "Asia",
+   "gdp_pc": 9091.1,
+   "aic_pc": 7381.0,
+   "gdp_tot": 1001.82,
+   "aic_tot": 813.37,
+   "share": 81.19
+  },
+  {
+   "name": "Poland",
+   "iso3": "POL",
+   "region": "Europe",
+   "gdp_pc": 40022.8,
+   "aic_pc": 28049.4,
+   "gdp_tot": 1527.35,
+   "aic_tot": 1070.42,
+   "share": 70.08
+  },
+  {
+   "name": "Portugal",
+   "iso3": "PRT",
+   "region": "Europe",
+   "gdp_pc": 39036.3,
+   "aic_pc": 27980.5,
+   "gdp_tot": 401.86,
+   "aic_tot": 288.05,
+   "share": 71.68
+  },
+  {
+   "name": "Qatar",
+   "iso3": "QAT",
+   "region": "Asia",
+   "gdp_pc": 106491.2,
+   "aic_pc": 26934.0,
+   "gdp_tot": 292.66,
+   "aic_tot": 74.02,
+   "share": 25.29
+  },
+  {
+   "name": "Romania",
+   "iso3": "ROU",
+   "region": "Europe",
+   "gdp_pc": 37962.5,
+   "aic_pc": 27501.9,
+   "gdp_tot": 726.08,
+   "aic_tot": 526.01,
+   "share": 72.44
+  },
+  {
+   "name": "Russian Federation",
+   "iso3": "RUT",
+   "region": "Europe",
+   "gdp_pc": 38938.5,
+   "aic_pc": 22815.4,
+   "gdp_tot": 5732.44,
+   "aic_tot": 3358.83,
+   "share": 58.59
+  },
+  {
+   "name": "Rwanda",
+   "iso3": "RWA",
+   "region": "Africa",
+   "gdp_pc": 2706.0,
+   "aic_pc": 2403.8,
+   "gdp_tot": 36.43,
+   "aic_tot": 32.36,
+   "share": 88.83
+  },
+  {
+   "name": "Sao Tome and Principe",
+   "iso3": "STP",
+   "region": "Africa",
+   "gdp_pc": 5585.7,
+   "aic_pc": 6022.0,
+   "gdp_tot": 1.25,
+   "aic_tot": 1.34,
+   "share": 107.81
+  },
+  {
+   "name": "Saudi Arabia",
+   "iso3": "SAU",
+   "region": "Asia",
+   "gdp_pc": 50329.8,
+   "aic_pc": 26238.1,
+   "gdp_tot": 1716.79,
+   "aic_tot": 895.0,
+   "share": 52.13
+  },
+  {
+   "name": "Senegal",
+   "iso3": "SEN",
+   "region": "Africa",
+   "gdp_pc": 4266.3,
+   "aic_pc": 3127.3,
+   "gdp_tot": 72.0,
+   "aic_tot": 52.78,
+   "share": 73.3
+  },
+  {
+   "name": "Serbia",
+   "iso3": "SRB",
+   "region": "Europe",
+   "gdp_pc": 22575.3,
+   "aic_pc": 17197.8,
+   "gdp_tot": 154.29,
+   "aic_tot": 117.54,
+   "share": 76.18
+  },
+  {
+   "name": "Seychelles",
+   "iso3": "SYC",
+   "region": "Africa",
+   "gdp_pc": 29711.9,
+   "aic_pc": 19230.9,
+   "gdp_tot": 3.16,
+   "aic_tot": 2.05,
+   "share": 64.72
+  },
+  {
+   "name": "Sierra Leone",
+   "iso3": "SLE",
+   "region": "Africa",
+   "gdp_pc": 1624.0,
+   "aic_pc": 1875.2,
+   "gdp_tot": 13.67,
+   "aic_tot": 15.79,
+   "share": 115.47
+  },
+  {
+   "name": "Singapore",
+   "iso3": "SGP",
+   "region": "Asia",
+   "gdp_pc": 131864.1,
+   "aic_pc": 35065.8,
+   "gdp_tot": 719.13,
+   "aic_tot": 191.23,
+   "share": 26.59
+  },
+  {
+   "name": "Slovak Republic",
+   "iso3": "SVK",
+   "region": "Europe",
+   "gdp_pc": 37840.8,
+   "aic_pc": 24912.5,
+   "gdp_tot": 205.88,
+   "aic_tot": 135.54,
+   "share": 65.84
+  },
+  {
+   "name": "Slovenia",
+   "iso3": "SVN",
+   "region": "Europe",
+   "gdp_pc": 46509.8,
+   "aic_pc": 28542.5,
+   "gdp_tot": 98.03,
+   "aic_tot": 60.16,
+   "share": 61.37
+  },
+  {
+   "name": "Somalia",
+   "iso3": "SOM",
+   "region": "Africa",
+   "gdp_pc": 1133.5,
+   "aic_pc": 1759.1,
+   "gdp_tot": 19.34,
+   "aic_tot": 30.02,
+   "share": 155.19
+  },
+  {
+   "name": "South Africa",
+   "iso3": "ZAF",
+   "region": "Africa",
+   "gdp_pc": 14222.7,
+   "aic_pc": 10254.4,
+   "gdp_tot": 844.72,
+   "aic_tot": 609.03,
+   "share": 72.1
+  },
+  {
+   "name": "South Sudan",
+   "iso3": "SSD",
+   "region": "Africa",
+   "gdp_pc": 3116.2,
+   "aic_pc": 2324.1,
+   "gdp_tot": 33.49,
+   "aic_tot": 24.98,
+   "share": 74.58
+  },
+  {
+   "name": "Spain",
+   "iso3": "ESP",
+   "region": "Europe",
+   "gdp_pc": 43698.2,
+   "aic_pc": 28637.8,
+   "gdp_tot": 2068.3,
+   "aic_tot": 1355.47,
+   "share": 65.54
+  },
+  {
+   "name": "Sri Lanka",
+   "iso3": "LKA",
+   "region": "Asia",
+   "gdp_pc": 14306.2,
+   "aic_pc": 10145.9,
+   "gdp_tot": 316.97,
+   "aic_tot": 224.79,
+   "share": 70.92
+  },
+  {
+   "name": "St. Kitts and Nevis",
+   "iso3": "KNA",
+   "region": "America",
+   "gdp_pc": 26488.2,
+   "aic_pc": 20721.9,
+   "gdp_tot": 1.26,
+   "aic_tot": 0.99,
+   "share": 78.23
+  },
+  {
+   "name": "St. Lucia",
+   "iso3": "LCA",
+   "region": "America",
+   "gdp_pc": 18651.8,
+   "aic_pc": 14273.0,
+   "gdp_tot": 3.35,
+   "aic_tot": 2.56,
+   "share": 76.52
+  },
+  {
+   "name": "St. Vincent and the Grenadines",
+   "iso3": "VCT",
+   "region": "America",
+   "gdp_pc": 15673.7,
+   "aic_pc": 12906.6,
+   "gdp_tot": 1.64,
+   "aic_tot": 1.35,
+   "share": 82.35
+  },
+  {
+   "name": "Sudan",
+   "iso3": "SDN",
+   "region": "Africa",
+   "gdp_pc": 4778.7,
+   "aic_pc": 4417.0,
+   "gdp_tot": 218.18,
+   "aic_tot": 201.67,
+   "share": 92.43
+  },
+  {
+   "name": "Suriname",
+   "iso3": "SUR",
+   "region": "America",
+   "gdp_pc": 18447.3,
+   "aic_pc": 11508.5,
+   "gdp_tot": 11.31,
+   "aic_tot": 7.05,
+   "share": 62.39
+  },
+  {
+   "name": "Sweden",
+   "iso3": "SWE",
+   "region": "Europe",
+   "gdp_pc": 63375.1,
+   "aic_pc": 37239.6,
+   "gdp_tot": 660.1,
+   "aic_tot": 387.88,
+   "share": 58.76
+  },
+  {
+   "name": "Switzerland",
+   "iso3": "CHE",
+   "region": "Europe",
+   "gdp_pc": 81603.1,
+   "aic_pc": 39657.2,
+   "gdp_tot": 710.32,
+   "aic_tot": 345.2,
+   "share": 48.6
+  },
+  {
+   "name": "Syrian Arab Republic",
+   "iso3": "SYR",
+   "region": "Asia",
+   "gdp_pc": 2309.9,
+   "aic_pc": 2833.9,
+   "gdp_tot": 62.15,
+   "aic_tot": 76.25,
+   "share": 122.68
+  },
+  {
+   "name": "Taiwan, China",
+   "iso3": "TWN",
+   "region": "Asia",
+   "gdp_pc": 64119.9,
+   "aic_pc": 33060.9,
+   "gdp_tot": 1504.78,
+   "aic_tot": 775.88,
+   "share": 51.56
+  },
+  {
+   "name": "Tajikistan",
+   "iso3": "TJK",
+   "region": "Asia",
+   "gdp_pc": 4053.1,
+   "aic_pc": 3420.9,
+   "gdp_tot": 39.73,
+   "aic_tot": 33.53,
+   "share": 84.4
+  },
+  {
+   "name": "Tanzania",
+   "iso3": "TZA",
+   "region": "Africa",
+   "gdp_pc": 3171.7,
+   "aic_pc": 2220.6,
+   "gdp_tot": 201.68,
+   "aic_tot": 141.21,
+   "share": 70.01
+  },
+  {
+   "name": "Thailand",
+   "iso3": "THA",
+   "region": "Asia",
+   "gdp_pc": 20837.8,
+   "aic_pc": 13428.5,
+   "gdp_tot": 1452.14,
+   "aic_tot": 935.8,
+   "share": 64.44
+  },
+  {
+   "name": "Togo",
+   "iso3": "TGO",
+   "region": "Africa",
+   "gdp_pc": 2666.9,
+   "aic_pc": 2234.0,
+   "gdp_tot": 23.05,
+   "aic_tot": 19.31,
+   "share": 83.77
+  },
+  {
+   "name": "Trinidad and Tobago",
+   "iso3": "TTO",
+   "region": "America",
+   "gdp_pc": 27631.7,
+   "aic_pc": 17714.5,
+   "gdp_tot": 42.16,
+   "aic_tot": 27.03,
+   "share": 64.11
+  },
+  {
+   "name": "Tunisia",
+   "iso3": "TUN",
+   "region": "Africa",
+   "gdp_pc": 12159.1,
+   "aic_pc": 10889.3,
+   "gdp_tot": 149.11,
+   "aic_tot": 133.53,
+   "share": 89.56
+  },
+  {
+   "name": "Turkiye",
+   "iso3": "TUR",
+   "region": "Asia",
+   "gdp_pc": 31637.6,
+   "aic_pc": 22121.0,
+   "gdp_tot": 2662.21,
+   "aic_tot": 1861.42,
+   "share": 69.92
+  },
+  {
+   "name": "Uganda",
+   "iso3": "UGA",
+   "region": "Africa",
+   "gdp_pc": 2784.0,
+   "aic_pc": 2158.3,
+   "gdp_tot": 127.66,
+   "aic_tot": 98.97,
+   "share": 77.53
+  },
+  {
+   "name": "Ukraine",
+   "iso3": "UKR",
+   "region": "Europe",
+   "gdp_pc": 17033.8,
+   "aic_pc": 13686.2,
+   "gdp_tot": 746.47,
+   "aic_tot": 599.77,
+   "share": 80.35
+  },
+  {
+   "name": "United Arab Emirates",
+   "iso3": "ARE",
+   "region": "Asia",
+   "gdp_pc": 68912.5,
+   "aic_pc": 32056.2,
+   "gdp_tot": 645.38,
+   "aic_tot": 300.21,
+   "share": 46.52
+  },
+  {
+   "name": "United Kingdom",
+   "iso3": "GBR",
+   "region": "Europe",
+   "gdp_pc": 52841.9,
+   "aic_pc": 36439.0,
+   "gdp_tot": 3541.78,
+   "aic_tot": 2442.36,
+   "share": 68.96
+  },
+  {
+   "name": "United States",
+   "iso3": "USA",
+   "region": "America",
+   "gdp_pc": 70987.9,
+   "aic_pc": 52653.9,
+   "gdp_tot": 23594.03,
+   "aic_tot": 17500.4,
+   "share": 74.17
+  },
+  {
+   "name": "Uruguay",
+   "iso3": "URY",
+   "region": "America",
+   "gdp_pc": 29500.0,
+   "aic_pc": 20649.3,
+   "gdp_tot": 101.08,
+   "aic_tot": 70.75,
+   "share": 70.0
+  },
+  {
+   "name": "Uzbekistan",
+   "iso3": "UZB",
+   "region": "Asia",
+   "gdp_pc": 8162.2,
+   "aic_pc": 5956.3,
+   "gdp_tot": 284.98,
+   "aic_tot": 207.96,
+   "share": 72.97
+  },
+  {
+   "name": "Viet Nam",
+   "iso3": "VNM",
+   "region": "Asia",
+   "gdp_pc": 12090.2,
+   "aic_pc": 7623.6,
+   "gdp_tot": 1190.96,
+   "aic_tot": 750.97,
+   "share": 63.06
+  },
+  {
+   "name": "West Bank and Gaza",
+   "iso3": "PSE",
+   "region": "Asia",
+   "gdp_pc": 5336.1,
+   "aic_pc": 6164.4,
+   "gdp_tot": 27.89,
+   "aic_tot": 32.22,
+   "share": 115.52
+  },
+  {
+   "name": "Zambia",
+   "iso3": "ZMB",
+   "region": "Africa",
+   "gdp_pc": 3526.5,
+   "aic_pc": 1717.4,
+   "gdp_tot": 68.67,
+   "aic_tot": 33.44,
+   "share": 48.7
+  },
+  {
+   "name": "Zimbabwe",
+   "iso3": "ZWE",
+   "region": "Africa",
+   "gdp_pc": 4162.4,
+   "aic_pc": 3228.4,
+   "gdp_tot": 66.57,
+   "aic_tot": 51.63,
+   "share": 77.56
+  }
+ ]
+}
