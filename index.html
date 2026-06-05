@@ -27,9 +27,23 @@
     padding: 16px 22px 12px;
     border-bottom: 1px solid var(--line);
     background: var(--panel);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
   }
+  header .titles { flex: 1; min-width: 0; }
   header h1 { margin: 0; font-size: 18px; font-weight: 650; letter-spacing: -0.01em; }
   header p { margin: 4px 0 0; color: var(--muted); font-size: 12.5px; max-width: 980px; }
+  .toggle {
+    flex-shrink: 0; align-self: center;
+    display: inline-flex; align-items: center; gap: 6px;
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    padding: 7px 12px; border-radius: 8px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .toggle:hover { background: #f3f1ec; }
+  .toggle .chev { transition: transform 0.15s ease; font-size: 10px; color: var(--muted); }
+  body.controls-collapsed .toggle .chev { transform: rotate(-90deg); }
+  body.controls-collapsed aside { display: none; }
   .layout { flex: 1; display: flex; min-height: 0; }
   /* ---- sidebar ---- */
   aside {
@@ -110,9 +124,14 @@
 </head>
 <body>
 <header>
-  <h1>How nations split their economy: Resident consumption vs. everything else</h1>
-  <p>Each bubble is an economy. <b>y</b> = Actual Individual Consumption (AIC) as % of GDP; <b>x</b> = GDP per capita (PPP);
-     <b>bubble area</b> ∝ total GDP (PPP); <b>color</b> = region.</p>
+  <div class="titles">
+    <h1>How nations split their economy: Resident consumption vs. everything else</h1>
+    <p>Each bubble is an economy. <b>y</b> = Actual Individual Consumption (AIC) as % of GDP; <b>x</b> = GDP per capita (PPP);
+       <b>bubble area</b> ∝ total GDP (PPP); <b>color</b> = region.</p>
+  </div>
+  <button class="toggle" id="toggleCtrl" aria-expanded="true">
+    <span class="chev">▼</span><span class="lbl">Controls</span>
+  </button>
 </header>
 
 <div class="layout">
@@ -120,8 +139,8 @@
     <div class="group">
       <div class="label">X-axis scale</div>
       <div class="seg" id="scaleSeg">
-        <button data-v="log" class="active">Log</button>
-        <button data-v="linear">Linear</button>
+        <button data-v="linear" class="active">Linear</button>
+        <button data-v="log">Log</button>
       </div>
     </div>
 
@@ -187,9 +206,16 @@ let DATA = null, chart = null;
 function fmtMoney(v) {
   return "$" + Math.round(v).toLocaleString();
 }
+function bubbleScale() {
+  // shrink bubbles on small charts so they don't swallow the plot
+  const w = chart ? chart.getWidth() : window.innerWidth;
+  if (w < 480) return 0.2;
+  if (w < 760) return 0.34;
+  return 0.78;
+}
 function symbolSize(gdpTot) {
   // bubble area ∝ total GDP  =>  diameter ∝ sqrt(total GDP)
-  return Math.max(5, Math.sqrt(gdpTot) * 0.78);
+  return Math.max(4, Math.sqrt(gdpTot) * bubbleScale());
 }
 
 function visibleCountries() {
@@ -283,7 +309,7 @@ function render() {
 
 function initChart() {
   chart = echarts.init(document.getElementById("chart"));
-  window.addEventListener("resize", () => chart.resize());
+  window.addEventListener("resize", () => { chart.resize(); render(); });
 }
 
 /* ---------- sidebar wiring ---------- */
@@ -329,6 +355,14 @@ function buildCountryList() {
 }
 
 function wireControls() {
+  const toggle = document.getElementById("toggleCtrl");
+  toggle.onclick = () => {
+    const collapsed = document.body.classList.toggle("controls-collapsed");
+    toggle.setAttribute("aria-expanded", String(!collapsed));
+    // sidebar visibility changes the chart's box — relayout and rescale bubbles
+    chart.resize();
+    render();
+  };
   document.querySelectorAll("#scaleSeg button").forEach(b => b.onclick = () => {
     document.querySelectorAll("#scaleSeg button").forEach(x => x.classList.remove("active"));
     b.classList.add("active");
