@@ -193,7 +193,7 @@ const REGION_COLORS = {
 const REGION_ORDER = ["Asia", "Europe", "Africa", "America", "Oceania", "Other"];
 
 const state = {
-  scale: "log",
+  scale: "linear",
   xmin: 0,
   xmax: null,
   regionsOn: new Set(REGION_ORDER),
@@ -202,6 +202,9 @@ const state = {
   show100: true,
 };
 let DATA = null, chart = null;
+
+// 1–2–5 sequence so the log axis gets labeled ticks between the powers of ten
+const LOG_TICKS = [1000, 2000, 5000, 10000, 20000, 50000, 100000, 150000];
 
 function fmtMoney(v) {
   return "$" + Math.round(v).toLocaleString();
@@ -291,9 +294,10 @@ function render() {
       name: "GDP per capita, PPP (int'l $, 2021)  →  more prosperous",
       nameLocation: "middle", nameGap: 34, nameTextStyle: { color: "#555", fontSize: 12 },
       min: state.xmin > 0 ? state.xmin : (state.scale === "log" ? 900 : 0),
-      max: state.xmax == null ? null : state.xmax,
-      axisLabel: { formatter: v => fmtMoney(v) },
-      splitLine: { lineStyle: { color: "#eee" } },
+      max: state.xmax == null ? 150000 : state.xmax,
+      axisLabel: { formatter: v => fmtMoney(v), customValues: state.scale === "log" ? LOG_TICKS : undefined },
+      axisTick: { customValues: state.scale === "log" ? LOG_TICKS : undefined },
+      splitLine: { lineStyle: { color: "#eee" }, customValues: state.scale === "log" ? LOG_TICKS : undefined },
     },
     yAxis: {
       type: "value",
