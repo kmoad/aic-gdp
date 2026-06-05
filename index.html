@@ -83,6 +83,29 @@
   #chart { position: absolute; inset: 0; }
   footer { padding: 7px 22px; font-size: 11px; color: var(--muted); border-top: 1px solid var(--line); background: var(--panel); }
   footer a { color: var(--accent); }
+
+  /* ---- mobile ---- */
+  @media (max-width: 720px) {
+    /* let the document scroll instead of trapping everything in a 100vh app */
+    html, body { height: auto; }
+    header { padding: 13px 16px 11px; }
+    header h1 { font-size: 16px; }
+    header p { font-size: 12px; }
+    .layout { flex-direction: column; }
+    aside {
+      width: 100%;
+      flex-shrink: 1;
+      border-right: 0;
+      border-bottom: 1px solid var(--line);
+      overflow-y: visible;
+      padding: 14px 16px 20px;
+    }
+    /* the country list keeps its own scroll so it can't dominate the page */
+    .countries { max-height: 220px; }
+    /* chart needs an explicit height once it's no longer filling a flex row */
+    main { flex: none; height: 70vh; min-height: 320px; }
+    footer { padding: 9px 16px; }
+  }
 </style>
 </head>
 <body>
