@@ -291,7 +291,7 @@ function render() {
     },
     xAxis: {
       type: state.scale === "log" ? "log" : "value",
-      name: "GDP per capita, PPP (int'l $, 2021)  →  more prosperous",
+      name: "GDP per capita, PPP (int'l $, 2021), →  more prosperous",
       nameLocation: "middle", nameGap: 34, nameTextStyle: { color: "#555", fontSize: 12 },
       min: state.xmin > 0 ? state.xmin : (state.scale === "log" ? 900 : 0),
       max: state.xmax == null ? 150000 : state.xmax,
@@ -301,7 +301,7 @@ function render() {
     },
     yAxis: {
       type: "value",
-      name: "AIC as % of GDP  ↑ more flows to citizens",
+      name: "AIC as % of GDP, ↑ more share for residents",
       nameLocation: "middle", nameGap: 46, nameTextStyle: { color: "#555", fontSize: 12 },
       axisLabel: { formatter: "{value}%" },
       splitLine: { lineStyle: { color: "#eee" } },
