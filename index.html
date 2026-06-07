@@ -282,11 +282,13 @@ function render() {
       borderColor: "#ddd", textStyle: { color: "#1f2328" },
       formatter: p => {
         const [gdp, share, tot] = p.value;
+				const aic_pc = share/100 * gdp;
         return `<b>${p.name}</b><br/>` +
           `<span style="color:${p.color}">●</span> ${p.seriesName}<br/>` +
-          `AIC share: <b>${share.toFixed(1)}%</b> of GDP<br/>` +
-          `GDP / capita: ${fmtMoney(gdp)}<br/>` +
-          `Total GDP: $${tot.toLocaleString()}B (PPP)`;
+					`GDP: $${tot.toLocaleString()}B (PPP)<br/>` +
+          `GDP/cap: ${fmtMoney(gdp)}<br/>` +
+					`AIC: ${fmtMoney(aic_pc)}<br/>` +
+          `AIC share: <b>${share.toFixed(1)}%</b> of GDP`;
       },
     },
     xAxis: {
